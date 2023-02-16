@@ -3,15 +3,15 @@
   stages {
     stage('Build') {
       steps {
-        sh 'g++ xxx.cpp'
-        build job: 'PES1UG20CS581'
-        echo 'Built Successfully '
+        sh 'g++ PES1UG20CS581.cpp'
+        build job: 'PES1UG20CS581 PES1UG20CS581.cpp'
+        echo 'Build the stage successfully '
       }
     }
     stage('Test') {
       steps {
-        sh './a.out'
-        echo 'Tested Passed '
+        sh './PES1UG20CS581.out'
+        echo 'Test Stage is Passed '
       }
     }
     stage('Deploy') {
