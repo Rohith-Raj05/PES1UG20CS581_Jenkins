@@ -4,7 +4,7 @@
     stage('Build') {
       steps {
         sh 'g++ xxx.cpp'
-        build job: 'PES1UG20CS'
+        build job: 'PES1UG20CS581'
         echo 'Built Successfully '
       }
     }
